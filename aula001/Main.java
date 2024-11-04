@@ -15,11 +15,11 @@
         Estado - 50% de carga da tinta
     }
     Instanciar - pegar uma classe e gerar um objeto.
-        c1 = new Caneta();
+        Caneta c1 = new Caneta();
         c1.cor = "Azul";
         c1.ponta = 0.5;
 
-        c2 = new Caneta();
+        Caneta c2 = new Caneta();
         c2.cor = "Vermelho";
         c2.ponta = 1.0;
     Nesse caso, c1 e c2 são diferentes objetos mas que vem de uma mesma classe (de um mesmo molde)
@@ -29,7 +29,19 @@
 
 public class Main {
     public static void main(String[] args) {
-        
+        Caneta c1 = new Caneta();
+        c1.cor = "Azul";
+        c1.ponta = 0.5f;
+        c1.destampar();
+        c1.status();
+        c1.rabiscar();
+        System.out.println("---------NOVO OBJETO----------------");
+        Caneta c2 = new Caneta();
+        c2.cor = "Vermelha";
+        c2.ponta = 1.0f;
+        c2.tampar();
+        c2.status();
+        c2.rabiscar();
     }
 }
 
