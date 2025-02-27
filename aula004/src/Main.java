@@ -2,6 +2,7 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        ContaBanco c = new ContaBanco(1, "CC", "Joao", true);
+        c.abrirConta("CP");
     }
 }
