@@ -53,7 +53,7 @@ public class Lutador {
         return categoria;
     }
 
-    public void setCategoria() {
+    private void setCategoria() {
         if (this.getPeso() < 52.2f) {
             this.categoria = "Invalido";
         } else if (this.getPeso() <= 70.3f) {
@@ -115,7 +115,7 @@ public class Lutador {
         System.out.println("Empatou: " + getEmpates());
     }
     public void Status() {
-        System.out.println("---------STATUS DO LUTADOR " + getNome() + "-----------------");
+        System.out.println("---------STATUS DO LUTADOR " + getNome().toUpperCase() + "-----------------");
         System.out.println(getNome());
         System.out.println("IS um peso " + getCategoria());
         System.out.println(getVitorias() + " vitorias");
