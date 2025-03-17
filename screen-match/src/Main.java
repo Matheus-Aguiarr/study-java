@@ -18,6 +18,10 @@ public class Main {
             System.out.println("#");
         }
 
+        int celsius = 32;
+        double farenheit = (celsius * 1.8) + 32;
+        System.out.println(String.format("the value %dC in farenheit is %f", celsius, farenheit));
+
 
     }
 }
